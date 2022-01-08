@@ -1,10 +1,13 @@
+import Lable from "./Lable"
+
 function Detail(props) {
     return (
         <div>
-            <h3>Student Name : {props.student.name}</h3>
-            <h3>Student Age : {props.student.age}</h3>
-            <h3>Student Address : {props.student.address}</h3>
-            <h3>Student T.P : {props.student.tp}</h3>
+            <Lable name="Name" value={props.student.name}/>
+            <Lable name="Age" value={props.student.age}/>
+            <Lable name="Address" value={props.student.address}/>
+            <Lable name="T.P" value={props.student.tp}/>
+
         </div>
     )
 }
