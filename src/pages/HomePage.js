@@ -1,4 +1,5 @@
 import Navigation from "../components/Navigation";
+import Detail from "../components/Detail";
 
 function HomePage() {
 
@@ -12,16 +13,14 @@ function HomePage() {
     return (
         <div>
             <Navigation screen="Home Page" />
+
             <p>This is Home Page</p>
 
             <hr />
 
             <h1>Student Details</h1>
 
-            <h3>Student Name : {student.name}</h3>
-            <h3>Student Age : {student.age}</h3>
-            <h3>Student Address : {student.address}</h3>
-            <h3>Student T.P : {student.tp}</h3>
+            <Detail student={student} />
 
         </div>
     )
