@@ -1,6 +1,5 @@
 import Navigation from "../components/Navigation"
 import { useState } from "react";
-import { Select, MenuItem } from "@mui/material";
 
 function About() {
 
@@ -20,17 +19,13 @@ function About() {
             <br></br>
             <br></br>
             
-            <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={age}
-                label="Age"
-            // onChange={handleChange}
-            >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-            </Select>
+            Slect Your Favourite vehicle Brand :
+            <select>
+                <option value={"Mazda"}>Mazda</option>
+                <option value={"BMW"}>BMW</option>
+                <option value={"Toyota"}>Toyota</option>
+            </select>
+
         </div>
     )
 }
