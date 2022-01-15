@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 
 function About() {
@@ -11,7 +11,12 @@ function About() {
 
     const whenClicked = () => {
         console.log(name + " " + address);
+        setName("No name");
     }
+
+    useEffect(() => {
+        console.log("useEffect Called");
+    }, []);
 
     return (
         <div>
