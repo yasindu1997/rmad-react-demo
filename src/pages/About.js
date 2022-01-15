@@ -11,12 +11,11 @@ function About() {
 
     const whenClicked = () => {
         console.log(name + " " + address);
-        setName("No name");
     }
 
     useEffect(() => {
         console.log("useEffect Called");
-    }, []);
+    }, [name]);
 
     return (
         <div>
