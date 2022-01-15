@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation"
 import { useState } from "react";
+import { Button } from "@mui/material";
 
 function About() {
 
@@ -7,6 +8,10 @@ function About() {
     const [name, setName] = useState('');
     const [address, setAddress] = useState('');
     const [age, setAge] = useState(0);
+
+    const whenClicked = () => {
+        console.log(name + " " + address);
+    }
 
     return (
         <div>
@@ -18,13 +23,16 @@ function About() {
             Address : <input type={"text"} value={address} onChange={(e) => { setAddress(e.target.value) }} />
             <br></br>
             <br></br>
-            
+
             Slect Your Favourite vehicle Brand :
-            <select>
+            <select >
                 <option value={"Mazda"}>Mazda</option>
                 <option value={"BMW"}>BMW</option>
                 <option value={"Toyota"}>Toyota</option>
             </select>
+            <br></br>
+            <br></br>
+            <Button variant="contained" onClick={whenClicked}>Save Data</Button>
 
         </div>
     )
