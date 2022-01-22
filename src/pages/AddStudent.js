@@ -52,7 +52,7 @@ function AddStudent() {
                         setPhone(e.target.value)
                     }} type="tel" placeholder="Phone Number"></input>
 
-                    <button type="button" className="btn btn-success mt-4" onClick={() => { console.log(students); }}>Save Student</button>
+                    <button type="button" className="btn btn-success mt-4" onClick={AddStudent}>Save Student</button>
                 </div>
 
                 <div className="col-6">
