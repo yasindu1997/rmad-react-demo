@@ -52,7 +52,7 @@ function AddStudent() {
                         setPhone(e.target.value)
                     }} type="tel" placeholder="Phone Number"></input>
 
-                    <button type="button" className="btn btn-success mt-4" onClick={AddStudent}>Save Student</button>
+                    <button type="button" className="btn btn-success mt-4" onClick={addStudent}>Save Student</button>
                 </div>
 
                 <div className="col-6">
@@ -66,12 +66,16 @@ function AddStudent() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Yasindu Sathsara</td>
-                                <td>Panadura</td>
-                                <td>yasindusathsara@gmail.com</td>
-                                <td>0775067538</td>
-                            </tr>
+                            {students.map(student => {
+                                return (
+                                    <tr>
+                                        <td>{student.name}</td>
+                                        <td>{student.address}</td>
+                                        <td>{student.email}</td>
+                                        <td>{student.phone_number}</td>
+                                    </tr>
+                                )
+                            })}
                         </tbody>
                     </table>
                 </div>
