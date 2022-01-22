@@ -1,4 +1,3 @@
-import Navigation from "../components/Navigation"
 import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 
@@ -7,7 +6,6 @@ function About() {
     //how to create a state
     const [name, setName] = useState('');
     const [address, setAddress] = useState('');
-    const [age, setAge] = useState(0);
 
     const whenClicked = () => {
         console.log(name + " " + address);
@@ -19,7 +17,6 @@ function About() {
 
     return (
         <div>
-            <Navigation screen="About Page" />
             <br></br>
             Name : <input type={"text"} value={name} onChange={(e) => { setName(e.target.value) }} />
             <br></br>

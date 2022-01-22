@@ -1,8 +1,6 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navigation() {
-
-    const [age, setAge] = useState('');
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -15,13 +13,13 @@ function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                            <Link className="nav-link" to="/add_student">Add Student</Link>
                         </li>
                     </ul>
                 </div>

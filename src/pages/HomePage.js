@@ -1,4 +1,3 @@
-import Navigation from "../components/Navigation";
 import Detail from "../components/Detail";
 import {TextField} from "@mui/material";
 import Table from '@mui/material/Table';
@@ -47,8 +46,6 @@ function HomePage() {
 
     return (
         <div>
-            <Navigation/>
-
             <div className="container">
                 <div className="row">
                     <div className="col">
